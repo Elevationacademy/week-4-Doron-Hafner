@@ -1,4 +1,3 @@
 const circleUtilities = require('./circleUtils');
-// console.log(circleUtilities.calcCircleArea(4));
-console.log(title);
-
+console.log(circleUtilities.calcCircleArea(4));
+console.log(circleUtilities.title);
