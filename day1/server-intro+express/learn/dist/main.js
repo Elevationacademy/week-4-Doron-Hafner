@@ -6,5 +6,7 @@ const fetchBookData = function () {
 
     $.get(`books/${input}`, function (bookData) {
         $("body").append(`<div>${bookData.title} - ${bookData.author}`)
+        console.log(bookData)
     })
 }
+

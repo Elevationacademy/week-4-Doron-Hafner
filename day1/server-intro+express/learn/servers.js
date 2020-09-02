@@ -38,26 +38,13 @@ const data = {
         author: "Lois Lowry"
     }
 }
-app.get('/books/:bookID', (req, res) => {
-    let bookID = req.params.bookID
-    res.send(data[bookID])
+app.get('/books/:bookID', function (req, res) {
+    res.send(data[req.params.bookID])
 })
-
-
-
-
 
 
 app.use(express.static(path.join(__dirname, 'dist')))
 app.use(express.static(path.join(__dirname, 'node_modules')))
-
-
-
-
-
-
-
-
 const port = 3000
-app.listen(port, function(){
+app.listen(port, function () {
 })
